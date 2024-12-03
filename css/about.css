@@ -1,0 +1,401 @@
+/* style.css */
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+  
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    background-color: #eef0f199;
+    min-height: 100hvh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    padding:20px 40px ;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.05);
+    z-index: 999;
+    position:static;
+    top: 0;
+    left: 0;
+}
+img{
+    height: 77px;
+    width: 30xp;
+    border-radius: 50px 50px;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+ 
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 21px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    padding: 10px;
+}
+
+header ul li a::before{
+    content:'';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+
+}
+
+header h1{
+    position: relative;
+    left: 30px;
+}
+
+header ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+} */
+
+.twelve h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+.twelve h1 {
+    font-size:24px; font-weight:700;  letter-spacing:2px; text-transform:uppercase; width:160px; text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
+  }
+  .twelve h1:before {
+      background-color: rgb(0, 95, 197);
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .twelve h1:after {
+      background-color: rgb(0, 95, 197);
+      content: '';
+      display: block;
+    position:absolute; right:0; bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 0.25em;
+  }
+  .twelve {
+    position:absolute;
+    left: 89px;
+  }
+/* About  */
+
+
+/* Hero Section */
+#about-hero {
+    background: url('Tropical\ Ocean\ Beach\ Boat\ Blue\ 8K\ Wallpaper-3840x2400.jpg') no-repeat center center/cover;
+    color: #333;
+    font:bold;  
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  
+  #about-hero .about-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #about-hero h1 {
+    font-size: 48px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+  }
+  
+  #about-hero p {
+    font-size: 25px;
+    font-weight: 1000;
+  }
+  
+  /* About Us Section */
+  .section-p1 {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .about-image {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 237px;
+    width: 400px;
+    
+  }
+  
+  
+  /* Team Section */
+  #team {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  #team .team-header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #team .team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #team .team-member {
+    max-width: 200px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  #team .team-member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #team .team-member h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  #team .team-member p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  
+  
+
+/* Footer Section */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f5f6f7;
+    padding-top: 10px;
+    height: 335px;
+    width:100%
+ }
+ 
+ 
+  footer .col{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     /* margin-bottom: 20px; */
+     margin-top: 10px;
+  }
+ 
+ 
+  footer h4{
+     font-size: 25px;
+     padding-bottom: 10px;
+     padding-top: 14px;
+     font-weight: 700;
+     text-decoration: underline;
+  }
+  footer a{
+     font-size: 18px;
+     text-decoration: none;
+     margin-bottom: 10px;
+     font-weight: 700;
+     color: black;
+  }
+  
+#card1{
+    position: relative;
+    left: 40px;
+}
+.payment img{
+    height: 50px;
+    width: 50px;
+
+}
+.payment p{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    text-decoration: underline;
+}
+.payment{
+        position: relative;
+        top: 120px;
+        right: 45px;
+}
+
+#card1 strong{
+    font-size: 22px;
+}
+#card1 p{
+    font-size: 18px;
+}
+#card1 img{
+    margin-top: 50px;
+    mix-blend-mode: multiply;
+}
+
+#card2{
+    position: relative;
+    top: 105px;
+}
+
+.ic{
+    height: 20px;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    .about-container, .team-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .navigation {
+        flex-direction: column;
+    }
+}
+
+
+.fish{
+    position: absolute;
+    top: 65px;
+  }
+
+  .view{
+    padding-bottom: 32px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .back {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #3e21e34f;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a {
+    color: inherit; 
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    text-decoration: none; 
+    color: inherit; 
+  }

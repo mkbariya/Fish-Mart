@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishMart - Cart</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@9.0.1/dist/contentful.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="index.php" class="logo"><img src="./Images/fish.jpg" alt="fish"></a>
+    <div class="twelve">
+        <h1>FishMart</h1>
+    </div>
+    <div class="group">
+        <ul class="navigation">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fishes.html">Fishes</a></li>
+            <li><a href="cart.html"><ion-icon name="cart-outline" class="loginbtn"></ion-icon></a></li>
+            <li><a href="profile.php"><ion-icon name="person-outline" class="loginbtn"></ion-icon></a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="container">
+    <div class="cart">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+    </div>
+</section>
+
+<script src="detail.js"></script>
+</body>
+</html>
